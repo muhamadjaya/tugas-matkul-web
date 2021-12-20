@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body::before {
+  content: "";
+  background-image: url(../img/bg2.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.4;
+  }
+}
+
+.custom-nav .navbar-brand img {
+  height: 1.8em;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 2.4em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #663b00;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    margin-left: 0.1rem;
+    color: #ff9400;
+  }
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+  display: inline-block;
+  color: white;
+  background-color: #ff9400;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button:hover {
+  color: #ff9400;
+  border: 1px solid #ff9400;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav #navbarNav .navbar-nav .nav-item .sign-up-button {
+    margin-left: -0.8rem;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+  }
+}
+
+.custom-section {
+  margin-top: 10em;
+  position: relative;
+}
+
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #ff9400;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.custom-section h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #aabde6;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.custom-section p {
+  color: #393c43;
+  font-size: 1.1rem;
+  margin-top: 2em;
+}
+
+.custom-section a {
+  margin-top: 2.2em;
+  display: inline-block;
+  color: white;
+  background-color: #ff9400;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-section a:hover {
+  color: #ff9400;
+  border: 1px solid #ff9400;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .custom-section h2,
+  .custom-section h3,
+  .custom-section p {
+    text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+  }
+  .custom-section h3 {
+    color: #50555f;
+  }
+}
+
+.about-section {
+  margin-top: 8em;
+}
+
+.about-section img {
+  margin-top: 2em;
+  margin-left: 6em;
+  height: 35em;
+}
+
+@media screen and (max-width: 992px) {
+  .about-section img {
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.2;
+  }
+}
+
+.about-section h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ff9400;
+}
+
+@media screen and (max-width: 992px) {
+  .about-section h3 {
+    margin-top: -12.4em;
+  }
+}
+
+.about-section p {
+  color: #393c43;
+  font-size: 1.1rem;
+  margin-top: 2em;
+}
+
+.about-section a {
+  margin-top: 2.2em;
+  display: inline-block;
+  color: white;
+  background-color: #ff9400;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.about-section a:hover {
+  color: #ff9400;
+  border: 1px solid #ff9400;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .about-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .about-section h3,
+  .about-section p {
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+  }
+  .about-section a {
+    position: relative;
+  }
+}
+
+.gallery-section {
+  margin-top: 6em;
+  margin-bottom: 8em;
+}
+
+.gallery-section h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ff9400;
+  text-align: center;
+}
+
+.gallery-section p {
+  color: #393c43;
+  font-size: 1.1rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.gallery-section .custom-text-card {
+  background-color: #ff9400;
+}
+
+.gallery-section .custom-text-card h5 {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+}
+
+.gallery-section .custom-text-card p {
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+}
+
+@media screen and (max-width: 992px) {
+  .gallery-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .gallery-section .custom-card {
+    height: 40vmax;
+    width: 36vmax;
+    margin: 0 auto;
+  }
+}
+
+.symbols-section {
+  background-color: #d3d3cb;
+  text-align: center;
+  color: black;
+  padding: 2em;
+  margin-bottom: 6em;
+}
+
+.symbols-section img {
+  height: 70px;
+  margin-bottom: 2em;
+}
+
+.symbols-section .village {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+}
+
+.symbols-section .desc-village {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+}
+
+.footer-section {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.footer-section img {
+  height: 5em;
+  margin-top: 20px;
+}
+
+.footer-section h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #393c43;
+}
+
+.footer-section ul li {
+  list-style-type: none;
+  margin-left: -29px;
+  color: #393c43;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+}
+
+.footer-section ul a {
+  text-decoration: none;
+  color: #393c43;
+}
+
+.footer-section ul a:hover {
+  color: #ff9400;
+}
+
+.footer-section .naruto-desc {
+  color: #393c43;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-shadow: 1px 1px 2px rgba(57, 60, 67, 0.3);
+}
+
+.footer-section .custom-icon {
+  color: #393c43;
+}
+
+.footer-section .custom-icon:hover {
+  color: #ff9400;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-section {
+    margin-top: -4em;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

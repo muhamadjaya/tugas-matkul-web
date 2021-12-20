@@ -1,0 +1,322 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+// Variables
+$primaryColor: #ff9400;
+$secondaryColor: #aabde6;
+$tertiaryColor: #c5abdc;
+$textColor: #393c43;
+
+// Mixin
+@mixin tombol {
+  display: inline-block;
+  color: white;
+  background-color: $primaryColor;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+// Styles
+body {
+  font-family: "Montserrat", sans-serif;
+  &::before {
+    content: "";
+    background-image: url(../img/bg2.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 60vmax;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    @media screen and (max-width: 992px) {
+      opacity: 0.4;
+    }
+  }
+}
+
+// Navbar
+.custom-nav {
+  .navbar-brand {
+    img {
+      height: 1.8em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: white;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin-left: 2.4em;
+          transition: 0.3s color ease;
+          &:hover {
+            color: darken($primaryColor, 30%);
+          }
+          @media screen and (max-width: 992px) {
+            margin-left: 0.1rem;
+            color: $primaryColor;
+          }
+        }
+
+        .sign-up-button {
+          @include tombol;
+          border: 1px solid transparent;
+          transition: 0.5s ease;
+          &:hover {
+            color: $primaryColor;
+            border: 1px solid $primaryColor;
+            background-color: transparent;
+          }
+          @media screen and (max-width: 992px) {
+            margin-left: -0.8rem;
+            border-radius: 2em;
+            padding: 0.5em 1em;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+  }
+}
+
+// custom section
+.custom-section {
+  margin-top: 10em;
+  position: relative;
+
+  h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: $primaryColor;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: $secondaryColor;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1.1rem;
+    margin-top: 2em;
+  }
+
+  a {
+    margin-top: 2.2em;
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 3em;
+    text-align: center;
+    h2,
+    h3,
+    p {
+      text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+    }
+    h3 {
+      color: lighten($textColor, 10%);
+    }
+  }
+}
+
+// About Section
+.about-section {
+  margin-top: 8em;
+
+  img {
+    margin-top: 2em;
+    margin-left: 6em;
+    height: 35em;
+    @media screen and (max-width: 992px) {
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.2;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: $primaryColor;
+    @media screen and (max-width: 992px) {
+      margin-top: -12.4em;
+    }
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1.1rem;
+    margin-top: 2em;
+  }
+
+  a {
+    margin-top: 2.2em;
+    @include tombol;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 3em;
+    text-align: center;
+
+    h3,
+    p {
+      position: relative;
+      text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+    }
+
+    a {
+      position: relative;
+    }
+  }
+}
+
+// Gallery Section
+.gallery-section {
+  margin-top: 6em;
+  margin-bottom: 8em;
+  h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: $primaryColor;
+    text-align: center;
+  }
+
+  p {
+    color: $textColor;
+    font-size: 1.1rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .custom-text-card {
+    background-color: $primaryColor;
+    h5 {
+      color: white;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+    }
+    p {
+      color: white;
+      font-size: 0.7rem;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: 3em;
+    text-align: center;
+
+    .custom-card {
+      height: 40vmax;
+      width: 36vmax;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Symbols Section
+.symbols-section {
+  background-color: #d3d3cb;
+  text-align: center;
+  color: black;
+  padding: 2em;
+  margin-bottom: 6em;
+  img {
+    height: 70px;
+    margin-bottom: 2em;
+  }
+  .village {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+  }
+  .desc-village {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+  }
+}
+
+// Footer Section
+.footer-section {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  img {
+    height: 5em;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: $textColor;
+  }
+
+  ul {
+    li {
+      list-style-type: none;
+      margin-left: -29px;
+      color: $textColor;
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+    }
+    a {
+      text-decoration: none;
+      color: $textColor;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .naruto-desc {
+    color: $textColor;
+    font-weight: 500;
+    font-size: 0.7rem;
+    text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+  }
+
+  .custom-icon {
+    color: $textColor;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: -4em;
+    text-align: center;
+  }
+}
